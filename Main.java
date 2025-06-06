@@ -15,15 +15,14 @@ public class Main {
         
         //crear una ventana con JFrame
         JFrame miVentana = new JFrame();
-        miVentana.setTitle("Hospital");   
-        miVentana.setSize(500,800);    //(altura x ancho)
+        miVentana.setTitle("Hospital SCL");   
+        miVentana.setSize(1000,800);    //(altura x ancho)
         miVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   // Al cerrar la ventana, el programa termina completamente
         miVentana.setLayout(new BorderLayout());   //(NORTE, SUR, ESTE, OESTE, CENTRO)
         
         //panel banner 
         JPanel panelBanner = new JPanel();
         panelBanner.setPreferredSize(new Dimension(500,800)); // Establecer tamaño preferido del panel
-        panelBanner.setSize(500, 300);// Establecer tamaño
         panelBanner.setOpaque(true);     // Hacer que el fondo del panel sea visible
         panelBanner.setBackground(Color.red);
         miVentana.add(panelBanner,BorderLayout.WEST);  // Añadir el panel a la parte izquierda (WEST) de la ventana
@@ -32,7 +31,7 @@ public class Main {
         LoginPanel panelLogin = new LoginPanel();   // Crear una instancia del panel de login personalizado
         miVentana.add(panelLogin.getPanel(), BorderLayout.CENTER);  // Añadir el panel de login en el centro de la ventana
         
-        miVentana.setVisible(true);    //asegurarse que la etiqueta sigua siendo visible
+        miVentana.setVisible(true);    //asegurarse que la etiqueta sigua siendo visible   
 
         }
         

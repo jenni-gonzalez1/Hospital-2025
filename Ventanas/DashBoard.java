@@ -5,15 +5,11 @@ import javax.swing.JFrame;
  
     public DashBoard() {
 
-        this.setTitle("Doctor mARCOS");
+        this.setLocationRelativeTo(null);
+        this.setTitle("Doctor Marcos");
         this.setSize(1000,1900);
-        this.setLayout(null);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        this.setVisible(true);
-    }
-
-    public JFrame getDashFrame() {
-        return this;
     }
     
 }
